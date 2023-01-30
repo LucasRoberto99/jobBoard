@@ -1,24 +1,86 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import Jobs from "./components/Jobs";
+import Job from "./components/Job";
+import Title from "./components/Title";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <Title name="The Job Board" />
       </header>
-    </div>
+      <div className="jobs">
+        <Job
+          className="red"
+          title="yo"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          className="red"
+          title="yo"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          className="red"
+          title="yo"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          className="red"
+          title="yo"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          className="red"
+          title="yo"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          className="red"
+          title="yo"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          className="red"
+          title="yo"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          className="red"
+          title="yo"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          className="red"
+          title="yo"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+      </div>
+
+      <footer>
+        Made with <a href="https://fr.reactjs.org/">React</a>at
+        <a href="https://www.lereacteur.io/">Le Reacteur</a>
+        by<a href="https://github.com/LucasRoberto99">Lucas ROBERTO</a>{" "}
+      </footer>
+    </>
   );
 }
 
