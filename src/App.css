@@ -4,14 +4,14 @@ body {
 
 /* HEADER */
 
-header {
+.headingBand {
   width: 100vw;
   height: 100px;
   background-color: black;
   display: flex;
   align-items: center;
 }
-.title {
+.headingPage {
   font-size: 40px;
   font-weight: bold;
   color: white;
@@ -21,16 +21,32 @@ header {
 
 /* MAIN */
 .jobs {
+  /* border: pink 1px solid; */
   margin: 60px 210px;
   display: flex;
+  justify-content: space-between;
   gap: 60px;
   flex-wrap: wrap;
 }
 
 .box {
-  background-color: aqua;
+  /* background-color: aqua; */
   width: calc((100% - 150px) / 3);
   aspect-ratio: 3/3;
+  padding: 18px;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+}
+
+.box h1 {
+  font-size: 30px;
+}
+
+.box .contract {
+  position: absolute;
+  bottom: 18px;
+  font-size: 18px;
 }
 
 /* BORDERSBOX */
@@ -51,10 +67,39 @@ header {
 }
 
 /* FOOTER */
-footer {
+.footer {
   width: 100vw;
   height: 60px;
   background-color: #dddddd;
   text-align: center;
   line-height: 60px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+@media (max-width: 1400px) {
+  .jobs {
+    margin: 20px 60px;
+    gap: 25px;
+  }
+
+  .box {
+    width: calc((100% - 80px) / 3);
+  }
+}
+
+@media (max-width: 950px) {
+  .jobs {
+    justify-content: center;
+    margin-top: 60px;
+    gap: 25px;
+  }
+
+  .box {
+    width: 350px;
+  }
 }
